@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Web con parallax</title>
 </head>
@@ -26,10 +27,10 @@
     
     <main>
         <div class="contenedor sobre-nosotros">
-            <h2 class="titulo">Nuestro producto</h2>
+            <h2 class="titulo" data-aos="fade-down" data-aos-duration="1000">Nuestro producto</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/ilustracion2.svg" alt="Ilustracion" class="imagen-about-us">
-                <div class="contenido-textos">
+                <img src="img/ilustracion2.svg" alt="Ilustracion" class="imagen-about-us" data-aos="fade-right" data-aos-duration="1000">
+                <div class="contenido-textos" data-aos="fade-left" data-aos-duration="1000">
                     <h3><span>1</span>Los mejores productos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis dolore modi? Eum perspiciatis aspernatur deserunt illum vel, aliquid voluptates. Corrupti minima eius distinctio voluptatum dolorum deserunt voluptatibus quaerat consequuntur?</p>
                     <h3><span>2</span>La mejor calidad del mercado</h3>
@@ -38,7 +39,7 @@
             </div><!--contenedor-sobre-nosotros-->
         </div><!--contenedor sobre-nosotros-->
 
-        <section class="portafolio">
+        <section class="portafolio" data-aos="fade-right">
             <div class="contenedor">
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
@@ -102,7 +103,7 @@
             </div><!--contenedor-->
         </section><!--portafolio-->
 
-        <section class="clientes contenedor">
+        <section class="clientes contenedor" data-aos="fade-up-left" data-aos-duration="1000">
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="cards">
                 <div class="card">
@@ -122,7 +123,7 @@
             </div><!--cards-->
         </section>
 
-        <section class="about-services">
+        <section class="about-services" data-aos="fade-up-right" data-aos-duration="1000">
             <div class="contenedor">
                 <h2 class="titulo">Nuestros servicios</h2>
                 <div class="servicio-cont">
@@ -163,5 +164,11 @@
         </div><!--contenedor-footer-->
         <h2 class="titulo-final">&copy; Juan Gaytán</h2>
     </footer>
+
+    <!-- Animaciones aos -->
+    <script src="/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
